@@ -1,17 +1,53 @@
 :root {
-    --image-1: url(../images/8a3e6d_1071494950844322b7466f443dda9910_mv2.webp) ;
-    --image-2: url(../images/84770f_846b3eb4a2424c6ca3e20381f6a37b12.webp) ;
-    --image-3: url(../images/84770f_2ff29ff6663a4d619983458cb0899264.webp) ;
-    --image-4: url(../images/84770f_d53e8acab8b245a9af9d4d94393c9f35.webp) ;
-    --image-5: url(../images/84770f_604877bf317e405eb76aa207fbc71bb8.webp) ;
-    --image-6: url(../images/84770f_0b62108b80bf470d9b560c6ec2acdd8f.webp) ;
-    --image-7: url(../images/84770f_94e9bd328d5f44009ff4e3530b8fdd94.webp) ;
-    --image-8: url(../images/84770f_2c2729976e9a4eac8dd9d39afdc5cca0.webp) ;
-    --image-9: url(../images/84770f_6ea07d2f16c9413e8d25c95fdb45a964.webp) ;
-    --image-10: url(../images/84770f_ee111c4ceebc4c67a774cacb3f6fa3fb.webp) ;
-    --image-11: url(../images/84770f_c3e4d7dd87e740ac940ac92c2e99548e.webp) ;
-    --image-12: url(../images/84770f_5011d2326c0b42689dd15646828c36dd.webp) ;
-    --image-13: url(../images/84770f_e5dc9a2b4a414344bb9ddb9425562d4a.webp) ;
+    --image-1: url(../images/8a3e6d_1071494950844322b7466f443dda9910_mv2.webp);
+    --image-2: url(../images/84770f_846b3eb4a2424c6ca3e20381f6a37b12.webp);
+    --image-3: url(../images/84770f_2ff29ff6663a4d619983458cb0899264.webp);
+    --image-4: url(../images/84770f_d53e8acab8b245a9af9d4d94393c9f35.webp);
+    --image-5: url(../images/84770f_604877bf317e405eb76aa207fbc71bb8.webp);
+    --image-6: url(../images/84770f_0b62108b80bf470d9b560c6ec2acdd8f.webp);
+    --image-7: url(../images/84770f_94e9bd328d5f44009ff4e3530b8fdd94.webp);
+    --image-8: url(../images/84770f_2c2729976e9a4eac8dd9d39afdc5cca0.webp);
+    --image-9: url(../images/84770f_6ea07d2f16c9413e8d25c95fdb45a964.webp);
+    --image-10: url(../images/84770f_ee111c4ceebc4c67a774cacb3f6fa3fb.webp);
+    --image-11: url(../images/84770f_c3e4d7dd87e740ac940ac92c2e99548e.webp);
+    --image-12: url(../images/84770f_5011d2326c0b42689dd15646828c36dd.webp);
+    --image-13: url(../images/84770f_e5dc9a2b4a414344bb9ddb9425562d4a.webp);
+}
+
+.chair,
+.lamp,
+.carpet,
+.blanket,
+.spoon,
+.other-chair,
+.pan,
+.kettle,
+.basket,
+.cushion,
+.more-plants,
+.bottle {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
+}
+
+
+.chair:hover,
+.lamp:hover,
+.carpet:hover,
+.blanket:hover,
+.spoon:hover,
+.other-chair:hover,
+.pan:hover,
+.kettle:hover,
+.basket:hover,
+.cushion:hover,
+.more-plants:hover,
+.bottle:hover {
+    transform: scale(1.2);
 }
 
 .plants {
@@ -24,10 +60,22 @@
 
 .lamp {
     background-image: var(--image-3);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
 }
 
 .carpet {
     background-image: var(--image-4);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 1s;
 }
 
 .blanket {
@@ -64,4 +112,18 @@
 
 .bottle {
     background-image: var(--image-13);
+}
+
+.article-container {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.article-container-bigger {
+    width: auto;
+    height: 469px;
+    overflow: hidden;
+    position: relative;
 }
